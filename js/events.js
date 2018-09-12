@@ -6,13 +6,18 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', () => {
-    $('img').addClass('tasty')
+    $('img').addClass('tasty').css('boarder', 'red')
+  })
+}
+function pressIt() {
+  $('document').on('keydown', () => {
+    
   })
 }
 
 $(document).ready(function(){
 
 getIt();
-
+frameIt()
 
 });
